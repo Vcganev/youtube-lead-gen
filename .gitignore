@@ -1,5 +1,7 @@
 .env
 credentials.json
+secrets_output.toml
+generate_secrets.py
 __pycache__/
 *.pyc
 .DS_Store
