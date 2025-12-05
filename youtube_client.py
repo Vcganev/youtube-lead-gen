@@ -21,7 +21,7 @@ class YouTubeClient:
             response = request.execute()
             
             channel_ids = [item['snippet']['channelId'] for item in response.get('items', [])]
-            return channel_ids
+            return channel_ids[:max_results]
         except HttpError as e:
             print(f"An HTTP error {e.resp.status} occurred: {e.content}")
             return []

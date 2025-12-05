@@ -55,6 +55,7 @@ def run_pipeline(config_overrides=None, status_callback=None):
         log(f"\n🔎 Searching for keyword: {keyword}")
         
         # 1. Search Channels
+        log(f"   🔎 Searching with limit: {max_channels}")
         channel_ids = youtube.search_channels(keyword, max_results=max_channels)
         log(f"   Found {len(channel_ids)} channels.")
         
