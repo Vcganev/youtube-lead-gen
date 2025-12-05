@@ -20,6 +20,16 @@ YOUTUBE_API_KEY = get_env("YOUTUBE_API_KEY")
 SUPABASE_URL = get_env("SUPABASE_URL")
 SUPABASE_KEY = get_env("SUPABASE_KEY")
 
+# Debug Logging
+print("--- CONFIG DEBUG ---")
+print(f"OPENAI_API_KEY present: {bool(OPENAI_API_KEY)}")
+print(f"SUPABASE_URL present: {bool(SUPABASE_URL)}")
+if hasattr(st, "secrets"):
+    print(f"Secrets keys: {list(st.secrets.keys())}")
+else:
+    print("st.secrets not available")
+print("--------------------")
+
 # Google Sheets
 GOOGLE_SHEETS_CREDENTIALS_FILE = get_env("GOOGLE_SHEETS_CREDENTIALS_FILE", "credentials.json")
 GOOGLE_SHEET_ID = get_env("GOOGLE_SHEET_ID")
