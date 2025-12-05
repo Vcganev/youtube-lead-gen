@@ -1,0 +1,11 @@
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+supabase
+apify-client
+pandas
+gspread
+oauth2client
+openai
+python-dotenv
+streamlit
