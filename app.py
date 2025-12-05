@@ -1,6 +1,6 @@
 import streamlit as st
 import config
-from main import run_pipeline
+from pipeline import run_pipeline
 import threading
 import queue
 
